@@ -11,7 +11,7 @@ app.use(bodyparser.json())
 
 async function connectTodb(){
     try {
-        await mongoose.connect(process.env.mongo_url)
+        await mongoose.connect("mongodb+srv://lingeshkumarp2022cse:Seceuse.12@cluster0.d02yh6t.mongodb.net/jobapplication?retryWrites=true&w=majority&appName=Cluster0")
         const port = process.env.PORT || 4000
         console.log("DB CONNECTED SUCCESSFULLY")
         app.listen(port,()=>{
